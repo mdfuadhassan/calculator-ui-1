@@ -1,0 +1,156 @@
+/* Media for max width 420px */
+@media screen and (max-width: 420px) {
+
+    body {
+        display: rgb(19, 15, 56);
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 5px 20px 2px rgb(6, 30, 31);
+        border-radius: 10px;
+        display: flex;
+    }
+
+    .container>nav {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .type-container {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .type-container-in-1 {
+        display: none !important;
+
+    }
+
+    .type-container-in-2>.type-button {
+        justify-content: center !important;
+    }
+
+    nav,
+    .input-result-container,
+    .input-container,
+    .number-input {
+        z-index: 100 !important;
+    }
+
+
+}
+
+/* Midea for max-width 610 */
+@media screen and (max-width: 610px) {
+
+    body {
+        background-color: black;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 5px 20px 2px rgb(6, 30, 31);
+        border-radius: 10px;
+        background-color: black;
+    }
+
+    .container>nav {
+        border-radius: 10px 10px 0 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .input-result-container {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+    }
+
+    .type-container {
+        border-radius: 0 0 0 10px;
+        justify-content: center !important;
+    }
+
+    .type-container-in-2 {
+        display: flex;
+    }
+
+    .type-container-in-1,
+    .type-container-in-2 {
+        position: relative;
+        padding: 0;
+
+    }
+
+    nav,
+    .input-result-container,
+    .input-container,
+    .number-input {
+        z-index: 100 !important;
+    }
+}
+
+
+/* Midea for max-width 100vw */
+@media screen and (min-width: 610px) {
+
+    .container {
+        max-width: 810px;
+        max-height: 700px;
+        box-shadow: 1px 5px 20px 2px rgb(6, 30, 31);
+        border-radius: 10px;
+        background-color: black;
+    }
+
+    .container>nav {
+        border-radius: 10px 10px 0 0;
+    }
+
+    nav>.dots {
+        right: 35px;
+    }
+
+    .number-input {
+        padding: 5px 30px;
+    }
+
+    .type-container {
+        border-radius: 0 0 0 10px;
+        justify-content: center !important;
+    }
+
+    .type-container-in-2 {
+        display: flex;
+    }
+
+    .type-container-in-1,
+    .type-container-in-2 {
+        position: relative;
+        padding: 0;
+
+    }
+
+    nav,
+    .input-result-container,
+    .input-container,
+    .number-input {
+        z-index: 100 !important;
+    }
+
+    nav {
+        position: sticky !important;
+        top: 0;
+    }
+
+    .input-result-container {
+        position: sticky !important;
+        top: 40px;
+        right: 0;
+        left: 0;
+    }
+
+}

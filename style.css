@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    min-height: 700px !important;
+    overflow-y: scroll !important;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* Navbar style */
+.container>nav {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    position: relative;
+    z-index: 100 !important;
+}
+
+nav>.dots {
+    color: white;
+    font-size: .3rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    /* top: 0; */
+    bottom: 0;
+
+}
+
+/* Number input display style*/
+.input-result-container {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    z-index: 100 !important;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.number-input {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    min-height: 7.3vh;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0px 15px;
+    text-align: end;
+}
+
+.font-size {
+    font-size: 2rem;
+}
+
+/* Numbers and operators type screen style */
+.type-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+    column-gap: 25px;
+    border-radius: 20px 20px 10px 10px !important;
+
+    position: absolute;
+    bottom: 0;
+
+    background: linear-gradient(135deg, rgb(89, 171, 206), rgba(232, 14, 218, 0.2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.type-container-in-1,
+.type-container-in-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.type-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.type-container-in-1>.type-button {
+    justify-content: end;
+}
+
+.type-container-in-2>.type-button {
+    justify-content: start;
+}
+
+
+.type-button>.type {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(125deg rgb(224, 24, 218));
+    color: rgb(255, 255, 255);
+
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 1px 1px 3px rgb(7, 6, 16);
+
+}
+
+.type-eq {
+    height: 50px;
+    width: 125px;
+    background-color: rgb(26, 105, 128);
+    box-shadow: 1px 1px 3px rgb(7, 6, 16);
+    color: white;
+
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-color {
+    background-color: rgb(26, 105, 128);
+}

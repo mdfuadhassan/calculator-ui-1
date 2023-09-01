@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navbar top -->
+        <nav>
+            <div class="dots">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+            </div>
+        </nav>
+
+        <!-- Number input display -->
+        <div class="input-result-container">
+
+            <div class="input-container">
+                <input type="text" class="number-input" name="input" placeholder="5+2">
+            </div>
+            <div class="input-container">
+                <input type="text" class="number-input font-size" name="result" placeholder="7">
+            </div>
+
+        </div>
+
+        <!-- Numbers and operators type screen -->
+        <div class="type-container">
+
+            <!-- for big screen -->
+            <div class="type-container-in-1">
+                <div class="type-button">
+                    <div class="type">(</div>
+                    <div class="type">)</div>
+                    <div class="type">1/x</div>
+
+                    <!-- <div class="type">MR</div> -->
+                </div>
+                <div class="type-button">
+                    <div class="type"><sub>x</sub><sup>2</sup>
+                    </div>
+                    <div class="type"><sub>x</sub><sup>3</div>
+                    <div class="type"><sub>x</sub><sup>y</sup></div>
+
+                    <!-- <div class="type bg-color"><i class="fa-solid fa-delete-left"></i></div> -->
+                </div>
+                <div class="type-button">
+                    <div class="type">x!</div>
+                    <div class="type">&#8730</div>
+                    <div class="type"><sup>y</sup><sub>&#8730</sub><sub>x</sub></div>
+
+                    <!-- <div class="type bg-color">-</div> -->
+                </div>
+                <div class="type-button">
+                    <div class="type">e</div>
+                    <div class="type">In</div>
+                    <div class="type">log</div>
+
+                    <!-- <div class="type bg-color">+</div> -->
+                </div>
+                <div class="type-button">
+                    <div class="type">sin</div>
+                    <div class="type">cos</div>
+                    <div class="type">tan</div>
+
+                    <!-- <div class="type bg-color">%</div> -->
+                </div>
+                <div class="type-button">
+                    <div class="type">lnv</div>
+                    <div class="type">rad</div>
+                    <div class="type">&Pi;</div>
+                </div>
+            </div>
+
+            <!-- for small device -->
+            <div class="type-container-in-2">
+
+                <div class="type-button">
+                    <div class="type">MC</div>
+                    <div class="type">M+</div>
+                    <div class="type">M-</div>
+                    <div class="type">MR</div>
+                </div>
+                <div class="type-button">
+                    <div class="type bg-color">C</div>
+                    <div class="type bg-color"><i class="fa-solid fa-divide"></i></div>
+                    <div class="type bg-color"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="type bg-color"><i class="fa-solid fa-delete-left"></i></div>
+                </div>
+                <div class="type-button">
+                    <div class="type">7</div>
+                    <div class="type">8</div>
+                    <div class="type">9</div>
+                    <div class="type bg-color"><i class="fa-solid fa-minus"></i></div>
+                </div>
+                <div class="type-button">
+                    <div class="type">4</div>
+                    <div class="type">5</div>
+                    <div class="type">6</div>
+                    <div class="type bg-color"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="type-button">
+                    <div class="type">1</div>
+                    <div class="type">2</div>
+                    <div class="type">3</div>
+                    <div class="type bg-color"><i class="fa-solid fa-percent"></i></div>
+                </div>
+                <div class="type-button">
+                    <div class="type">0</div>
+                    <div class="type">.</div>
+                    <div class="type-eq"><i class="fa-solid fa-equals"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
